@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		CEFF871D1995354D00AB074E /* SpriteKitEasingSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = CEFF871C1995354D00AB074E /* SpriteKitEasingSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEFF87271995354D00AB074E /* SpriteKitEasingSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF87261995354D00AB074E /* SpriteKitEasingSwiftTests.swift */; };
+		CEFF87311995355A00AB074E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFF87301995355A00AB074E /* SpriteKit.framework */; };
+		CEFF87331995356200AB074E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFF87321995356200AB074E /* Foundation.framework */; };
+		CEFF87351995356800AB074E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFF87341995356800AB074E /* UIKit.framework */; };
+		CEFF87381995365E00AB074E /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF87371995365E00AB074E /* easing.swift */; };
+		CEFF873A1995368000AB074E /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF87391995368000AB074E /* SKEase.swift */; };
+		CEFF873C1995369400AB074E /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFF873B1995369400AB074E /* EasingDeclarations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +24,12 @@
 		CEFF87221995354D00AB074E /* SpriteKitEasingSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitEasingSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFF87251995354D00AB074E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEFF87261995354D00AB074E /* SpriteKitEasingSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitEasingSwiftTests.swift; sourceTree = "<group>"; };
+		CEFF87301995355A00AB074E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CEFF87321995356200AB074E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEFF87341995356800AB074E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEFF87371995365E00AB074E /* easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = easing.swift; sourceTree = "<group>"; };
+		CEFF87391995368000AB074E /* SKEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKEase.swift; sourceTree = "<group>"; };
+		CEFF873B1995369400AB074E /* EasingDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingDeclarations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +37,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFF87351995356800AB074E /* UIKit.framework in Frameworks */,
+				CEFF87331995356200AB074E /* Foundation.framework in Frameworks */,
+				CEFF87311995355A00AB074E /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +58,7 @@
 			children = (
 				CEFF87191995354D00AB074E /* SpriteKitEasingSwift */,
 				CEFF87231995354D00AB074E /* SpriteKitEasingSwiftTests */,
+				CEFF87361995357100AB074E /* Frameworks */,
 				CEFF87181995354D00AB074E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +77,9 @@
 			children = (
 				CEFF871C1995354D00AB074E /* SpriteKitEasingSwift.h */,
 				CEFF871A1995354D00AB074E /* Supporting Files */,
+				CEFF87371995365E00AB074E /* easing.swift */,
+				CEFF87391995368000AB074E /* SKEase.swift */,
+				CEFF873B1995369400AB074E /* EasingDeclarations.swift */,
 			);
 			path = SpriteKitEasingSwift;
 			sourceTree = "<group>";
@@ -88,6 +107,16 @@
 				CEFF87251995354D00AB074E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEFF87361995357100AB074E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF87341995356800AB074E /* UIKit.framework */,
+				CEFF87321995356200AB074E /* Foundation.framework */,
+				CEFF87301995355A00AB074E /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEFF87381995365E00AB074E /* easing.swift in Sources */,
+				CEFF873A1995368000AB074E /* SKEase.swift in Sources */,
+				CEFF873C1995369400AB074E /* EasingDeclarations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +330,7 @@
 		CEFF872B1995354D00AB074E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -307,12 +340,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CEFF872C1995354D00AB074E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
