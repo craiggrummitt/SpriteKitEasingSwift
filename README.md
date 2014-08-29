@@ -7,6 +7,8 @@ This easing library began life as a port of <a href="https://github.com/buddingm
 
 This library extends upon the basic easing equations available in the SpriteKit framework by Apple.
 
+Just drag the SpriteKitEasingSwift folder into your project.
+
 Sprite Kit Easing makes available the following standard easing equations as SKActions.
 * Linear
 * Quadratic
