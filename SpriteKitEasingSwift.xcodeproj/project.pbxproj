@@ -174,6 +174,8 @@
 		CEFF870E1995354D00AB074E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = CraigGrummitt;
 				TargetAttributes = {
@@ -409,6 +411,7 @@
 				CEFF872C1995354D00AB074E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEFF872D1995354D00AB074E /* Build configuration list for PBXNativeTarget "SpriteKitEasingSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				CEFF872F1995354D00AB074E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
