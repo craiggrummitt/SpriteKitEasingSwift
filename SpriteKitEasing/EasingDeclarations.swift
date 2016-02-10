@@ -13,7 +13,7 @@
 //  See LICENSE file for licensing information
 
 import Foundation
-enum CurveType {
+public enum CurveType {
     case CurveTypeLinear
     case CurveTypeQuadratic
     case CurveTypeCubic
@@ -27,7 +27,7 @@ enum CurveType {
     case CurveTypeBounce
 };
 
-enum EaseType {
+public enum EaseType {
     case EaseTypeIn
     case EaseTypeOut
     case EaseTypeInOut

@@ -1,0 +1,10 @@
+framework module SpriteKitEasing {
+  umbrella header "SpriteKitEasing.h"
+
+  export *
+  module * { export * }
+}
+
+module SpriteKitEasing.Swift {
+    header "SpriteKitEasing-Swift.h"
+}
