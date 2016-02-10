@@ -7,7 +7,10 @@ This easing library began life as a port of <a href="https://github.com/buddingm
 
 This library extends upon the basic easing equations available in the SpriteKit framework by Apple.
 
-Just drag the SpriteKitEasingSwift folder into your project.
+You have two ways to introduce SpriteKitEasing into your project. 
+
+1. You can just drag the SpriteKitEasingSwift folder into your project.
+2. You can add the frameworks in the `_Archive` folder into your project. Follow the instructions [here](https://kodmunki.wordpress.com/2015/09/22/ios-9-universal-cocoa-touch-frameworks/comment-page-1/#comment-201) under the heading "Adding Frameworks to an App".
 
 Sprite Kit Easing makes available the following standard easing equations as SKActions.
 * Linear
