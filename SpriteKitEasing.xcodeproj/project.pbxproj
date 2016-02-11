@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B91851011C6B8B9B0001824F /* SpriteKitEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = B91851001C6B8B9B0001824F /* SpriteKitEasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B918511B1C6B8CD00001824F /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91851171C6B8CD00001824F /* SKEase.swift */; };
-		B918511C1C6B8CD00001824F /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91851181C6B8CD00001824F /* easing.swift */; };
-		B918511D1C6B8CD00001824F /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91851191C6B8CD00001824F /* EasingDeclarations.swift */; };
+		B9E1C9C61C6CEE9200F17009 /* SpriteKitEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = B9E1C9BE1C6CEDB900F17009 /* SpriteKitEasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9E1C9D01C6CFFB100F17009 /* easing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C9CD1C6CFFB100F17009 /* easing.swift */; };
+		B9E1C9D11C6CFFB100F17009 /* EasingDeclarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C9CE1C6CFFB100F17009 /* EasingDeclarations.swift */; };
+		B9E1C9D21C6CFFB100F17009 /* SKEase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E1C9CF1C6CFFB100F17009 /* SKEase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B91850FD1C6B8B9B0001824F /* SpriteKitEasing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpriteKitEasing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B91851001C6B8B9B0001824F /* SpriteKitEasing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpriteKitEasing.h; sourceTree = "<group>"; };
 		B91851021C6B8B9B0001824F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B918510C1C6B8B9B0001824F /* SpriteKitEasingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitEasingTests.swift; sourceTree = "<group>"; };
 		B918510E1C6B8B9B0001824F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B91851171C6B8CD00001824F /* SKEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKEase.swift; sourceTree = "<group>"; };
-		B91851181C6B8CD00001824F /* easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = easing.swift; sourceTree = "<group>"; };
-		B91851191C6B8CD00001824F /* EasingDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasingDeclarations.swift; sourceTree = "<group>"; };
+		B9E1C9BE1C6CEDB900F17009 /* SpriteKitEasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteKitEasing.h; sourceTree = "<group>"; };
+		B9E1C9CD1C6CFFB100F17009 /* easing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = easing.swift; path = Pod/Classes/easing.swift; sourceTree = SOURCE_ROOT; };
+		B9E1C9CE1C6CFFB100F17009 /* EasingDeclarations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EasingDeclarations.swift; path = Pod/Classes/EasingDeclarations.swift; sourceTree = SOURCE_ROOT; };
+		B9E1C9CF1C6CFFB100F17009 /* SKEase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SKEase.swift; path = Pod/Classes/SKEase.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +55,10 @@
 		B91850FF1C6B8B9B0001824F /* SpriteKitEasing */ = {
 			isa = PBXGroup;
 			children = (
-				B91851001C6B8B9B0001824F /* SpriteKitEasing.h */,
-				B91851171C6B8CD00001824F /* SKEase.swift */,
-				B91851181C6B8CD00001824F /* easing.swift */,
-				B91851191C6B8CD00001824F /* EasingDeclarations.swift */,
+				B9E1C9CD1C6CFFB100F17009 /* easing.swift */,
+				B9E1C9CE1C6CFFB100F17009 /* EasingDeclarations.swift */,
+				B9E1C9CF1C6CFFB100F17009 /* SKEase.swift */,
+				B9E1C9BE1C6CEDB900F17009 /* SpriteKitEasing.h */,
 				B91851021C6B8B9B0001824F /* Info.plist */,
 			);
 			path = SpriteKitEasing;
@@ -80,7 +80,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B91851011C6B8B9B0001824F /* SpriteKitEasing.h in Headers */,
+				B9E1C9C61C6CEE9200F17009 /* SpriteKitEasing.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,9 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B918511C1C6B8CD00001824F /* easing.swift in Sources */,
-				B918511B1C6B8CD00001824F /* SKEase.swift in Sources */,
-				B918511D1C6B8CD00001824F /* EasingDeclarations.swift in Sources */,
+				B9E1C9D01C6CFFB100F17009 /* easing.swift in Sources */,
+				B9E1C9D21C6CFFB100F17009 /* SKEase.swift in Sources */,
+				B9E1C9D11C6CFFB100F17009 /* EasingDeclarations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
