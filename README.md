@@ -37,4 +37,24 @@ titleLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.
 self.addChild(titleLabel)
 titleLabel.runAction(SKEase.moveFromWithNode(titleLabel, easeFunction: .CurveTypeElastic, easeType: .EaseTypeOut, time: 1.5, fromVector: CGVectorMake(frame.width+titleLabel.frame.width/2, titleLabel.position.y)))
 ```
+
 Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a>.
+
+## Installation
+
+ActionSwift is available through [CocoaPods](https://cocoapods.org/pods/ActionSwift3). To install
+it, add the following to your Podfile: (Static Swift frameworks require iOS 8)
+
+```ruby
+use_frameworks!
+platform :ios, '8.0'
+pod 'ActionSwift3'
+```
+
+Don't forget to import the Pod where you would like to use it:
+
+```Swift
+import ActionSwift3
+```
+
+Alternatively, if you would like access to the example project as well, clone the github project [here](https://github.com/craiggrummitt/SpriteKitEasingSwift).
