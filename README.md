@@ -40,8 +40,11 @@ titleLabel.runAction(SKEase.moveFromWithNode(titleLabel, easeFunction: .CurveTyp
 
 Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a>.
 
+API documentation can be found at [cocoadocs](http://cocoadocs.org/docsets/SpriteKitEasingSwift/).
+
 ## Installation
 
+**via CocoaPods**
 ActionSwift is available through [CocoaPods](https://cocoapods.org/pods/ActionSwift3). To install
 it, add the following to your Podfile: (Static Swift frameworks require iOS 8)
 
@@ -57,4 +60,7 @@ Don't forget to import the Pod where you would like to use it:
 import ActionSwift3
 ```
 
-Alternatively, if you would like access to the example project as well, clone the github project [here](https://github.com/craiggrummitt/SpriteKitEasingSwift).
+***via Github:***
+Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework either:
+1. Drag the Pod/Classes folder into your project.
+2. Import the frameworks in the _Archive folder. Follow the steps under 'Adding Frameworks to an App' [here](https://kodmunki.wordpress.com/2015/09/22/ios-9-universal-cocoa-touch-frameworks/comment-page-1/#comment-201).
