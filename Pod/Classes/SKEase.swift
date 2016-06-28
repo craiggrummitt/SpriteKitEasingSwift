@@ -15,46 +15,46 @@ import UIKit
 import SpriteKit
 
 public class SKEase {
-    public class func getEaseFunction(curve:CurveType, easeType:EaseType)->AHEasingFunction {
+    public class func getEaseFunction(_ curve:CurveType, easeType:EaseType)->AHEasingFunction {
         var currentFunction:AHEasingFunction
         switch(curve) {
-        case .CurveTypeLinear:
+        case .curveTypeLinear:
             currentFunction=LinearInterpolation
-        case .CurveTypeQuadratic:
-            if (easeType == EaseType.EaseTypeIn) {print("YES")}
-            currentFunction = (easeType == .EaseTypeIn) ? QuadraticEaseIn : (easeType == .EaseTypeOut) ? QuadraticEaseOut : QuadraticEaseInOut;
-        case .CurveTypeCubic:
-            currentFunction = (easeType == .EaseTypeIn) ? CubicEaseIn : (easeType == .EaseTypeOut) ? CubicEaseOut : CubicEaseInOut;
-        case .CurveTypeQuartic:
-            currentFunction = (easeType == .EaseTypeIn) ? QuarticEaseIn : (easeType == .EaseTypeOut) ? QuarticEaseOut : QuarticEaseInOut;
-        case .CurveTypeQuintic:
-            currentFunction = (easeType == .EaseTypeIn) ? QuinticEaseIn : (easeType == .EaseTypeOut) ? QuinticEaseOut : QuinticEaseInOut;
-        case .CurveTypeSine:
-            currentFunction = (easeType == .EaseTypeIn) ? SineEaseIn : (easeType == .EaseTypeOut) ? SineEaseOut : SineEaseInOut;
-        case .CurveTypeCircular:
-            currentFunction = (easeType == .EaseTypeIn) ? CircularEaseIn : (easeType == .EaseTypeOut) ? CircularEaseOut : CircularEaseInOut;
-        case .CurveTypeExpo:
-            currentFunction = (easeType == .EaseTypeIn) ? ExponentialEaseIn : (easeType == .EaseTypeOut) ? ExponentialEaseOut : ExponentialEaseInOut;
-        case .CurveTypeElastic:
-            currentFunction = (easeType == .EaseTypeIn) ? ElasticEaseIn : (easeType == .EaseTypeOut) ? ElasticEaseOut : ElasticEaseInOut;
-        case .CurveTypeBack:
-            currentFunction = (easeType == .EaseTypeIn) ? BackEaseIn : (easeType == .EaseTypeOut) ? BackEaseOut : BackEaseInOut;
-        case .CurveTypeBounce:
-            currentFunction = (easeType == .EaseTypeIn) ? BounceEaseIn : (easeType == .EaseTypeOut) ? BounceEaseOut : BounceEaseInOut;
+        case .curveTypeQuadratic:
+            if (easeType == EaseType.easeTypeIn) {print("YES")}
+            currentFunction = (easeType == .easeTypeIn) ? QuadraticEaseIn : (easeType == .easeTypeOut) ? QuadraticEaseOut : QuadraticEaseInOut;
+        case .curveTypeCubic:
+            currentFunction = (easeType == .easeTypeIn) ? CubicEaseIn : (easeType == .easeTypeOut) ? CubicEaseOut : CubicEaseInOut;
+        case .curveTypeQuartic:
+            currentFunction = (easeType == .easeTypeIn) ? QuarticEaseIn : (easeType == .easeTypeOut) ? QuarticEaseOut : QuarticEaseInOut;
+        case .curveTypeQuintic:
+            currentFunction = (easeType == .easeTypeIn) ? QuinticEaseIn : (easeType == .easeTypeOut) ? QuinticEaseOut : QuinticEaseInOut;
+        case .curveTypeSine:
+            currentFunction = (easeType == .easeTypeIn) ? SineEaseIn : (easeType == .easeTypeOut) ? SineEaseOut : SineEaseInOut;
+        case .curveTypeCircular:
+            currentFunction = (easeType == .easeTypeIn) ? CircularEaseIn : (easeType == .easeTypeOut) ? CircularEaseOut : CircularEaseInOut;
+        case .curveTypeExpo:
+            currentFunction = (easeType == .easeTypeIn) ? ExponentialEaseIn : (easeType == .easeTypeOut) ? ExponentialEaseOut : ExponentialEaseInOut;
+        case .curveTypeElastic:
+            currentFunction = (easeType == .easeTypeIn) ? ElasticEaseIn : (easeType == .easeTypeOut) ? ElasticEaseOut : ElasticEaseInOut;
+        case .curveTypeBack:
+            currentFunction = (easeType == .easeTypeIn) ? BackEaseIn : (easeType == .easeTypeOut) ? BackEaseOut : BackEaseInOut;
+        case .curveTypeBounce:
+            currentFunction = (easeType == .easeTypeIn) ? BounceEaseIn : (easeType == .easeTypeOut) ? BounceEaseOut : BounceEaseInOut;
         }
         return currentFunction
     }
-    public class func createPointTween(start:CGPoint, end:CGPoint, time:NSTimeInterval,easingFunction:AHEasingFunction, setterBlock setter:((SKNode,CGPoint)->Void))->SKAction {
-        let action:SKAction = SKAction.customActionWithDuration(time, actionBlock: { (node:SKNode, elapsedTime:CGFloat) -> Void in
+    public class func createPointTween(_ start:CGPoint, end:CGPoint, time:TimeInterval,easingFunction:AHEasingFunction, setterBlock setter:((SKNode,CGPoint)->Void))->SKAction {
+        let action:SKAction = SKAction.customAction(withDuration: time, actionBlock: { (node:SKNode, elapsedTime:CGFloat) -> Void in
             let timeEq = easingFunction(Float(elapsedTime)/Float(time))
             let xValue:CGFloat = start.x + CGFloat(timeEq) * (end.x - start.x)
             let yValue:CGFloat = start.y + CGFloat(timeEq) * (end.y - start.y)
-            setter(node,CGPointMake(xValue, yValue))
+            setter(node,CGPoint(x: xValue, y: yValue))
         })
         return action
     }
-    public class func createFloatTween(start:CGFloat, end:CGFloat, time:NSTimeInterval,easingFunction:AHEasingFunction, setterBlock setter:((SKNode,CGFloat)->Void))->SKAction {
-        let action:SKAction = SKAction.customActionWithDuration(time, actionBlock: { (node:SKNode, elapsedTime:CGFloat) -> Void in
+    public class func createFloatTween(_ start:CGFloat, end:CGFloat, time:TimeInterval,easingFunction:AHEasingFunction, setterBlock setter:((SKNode,CGFloat)->Void))->SKAction {
+        let action:SKAction = SKAction.customAction(withDuration: time, actionBlock: { (node:SKNode, elapsedTime:CGFloat) -> Void in
             let timeEq = easingFunction(Float(elapsedTime)/Float(time))
             let value:CGFloat = start+CGFloat(timeEq) * (end-start)
             setter(node,value)
@@ -66,7 +66,7 @@ public class SKEase {
     /**
     Animate x/y movement
     */
-    public class func move(easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromPoint from:CGPoint, toPoint to:CGPoint)->SKAction {
+    public class func move(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromPoint from:CGPoint, toPoint to:CGPoint)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createPointTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, point:CGPoint) -> Void in
             node.position = point
@@ -74,18 +74,18 @@ public class SKEase {
         return action
     }
     //legacy
-    public class func moveToWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, toPoint to:CGPoint)->SKAction {
+    public class func moveTo(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, toPoint to:CGPoint)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let startPosition = target.position
-        let action = self.createPointTween(CGPointMake(startPosition.x,startPosition.y), end: to, time: time, easingFunction: easingFunction) { (node:SKNode, point:CGPoint) -> Void in
+        let action = self.createPointTween(CGPoint(x: startPosition.x,y: startPosition.y), end: to, time: time, easingFunction: easingFunction) { (node:SKNode, point:CGPoint) -> Void in
             node.position = point
         }
         return action
     }
-    public class func moveFromWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromPoint from:CGPoint)->SKAction {
+    public class func moveFrom(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromPoint from:CGPoint)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let startPosition = target.position
-        let action = self.createPointTween(from, end: CGPointMake(startPosition.x,startPosition.y), time: time, easingFunction: easingFunction) { (node:SKNode, point:CGPoint) -> Void in
+        let action = self.createPointTween(from, end: CGPoint(x: startPosition.x,y: startPosition.y), time: time, easingFunction: easingFunction) { (node:SKNode, point:CGPoint) -> Void in
             node.position = point
         }
         return action
@@ -95,7 +95,7 @@ public class SKEase {
     /**
     Animate scale
     */
-    public class func scale(easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
+    public class func scale(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, scale:CGFloat) -> Void in
             node.setScale(scale)
@@ -103,14 +103,14 @@ public class SKEase {
         return action
     }
     //legacy
-    public class func scaleToWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, toValue to:CGFloat)->SKAction {
+    public class func scaleTo(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(target.xScale, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, scale:CGFloat) -> Void in
             node.setScale(scale)
         }
         return action
     }
-    public class func scaleFromWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat)->SKAction {
+    public class func scaleFromWithNode(_ target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: target.xScale, time: time, easingFunction: easingFunction) { (node:SKNode, scale:CGFloat) -> Void in
             node.setScale(scale)
@@ -122,7 +122,7 @@ public class SKEase {
     /**
     Animate z rotation
     */
-    public class func rotate(easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
+    public class func rotate(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, rotation:CGFloat) -> Void in
             node.zRotation=rotation
@@ -130,14 +130,14 @@ public class SKEase {
         return action
     }
     //legacy
-    public class func rotateToWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, toValue to:CGFloat)->SKAction {
+    public class func rotateTo(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(target.zRotation, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, rotation:CGFloat) -> Void in
             node.zRotation=rotation
         }
         return action
     }
-    public class func rotateFromWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat)->SKAction {
+    public class func rotateFrom(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: target.zRotation, time: time, easingFunction: easingFunction) { (node:SKNode, rotation:CGFloat) -> Void in
             node.zRotation=rotation
@@ -150,7 +150,7 @@ public class SKEase {
     /**
     Animate fade
     */
-    public class func fade(easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
+    public class func fade(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, alpha:CGFloat) -> Void in
             node.alpha=alpha
@@ -158,14 +158,14 @@ public class SKEase {
         return action
     }
     //legacy
-    public class func fadeToWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, toValue to:CGFloat)->SKAction {
+    public class func fadeTo(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(target.alpha, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, alpha:CGFloat) -> Void in
             node.alpha=alpha
         }
         return action
     }
-    public class func fadeFromWithNode(target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:NSTimeInterval, fromValue from:CGFloat)->SKAction {
+    public class func fadeFrom(withNode target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, fromValue from:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
         let action = self.createFloatTween(from, end: target.alpha, time: time, easingFunction: easingFunction) { (node:SKNode, alpha:CGFloat) -> Void in
             node.alpha=alpha
