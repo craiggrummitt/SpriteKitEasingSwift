@@ -14,21 +14,21 @@
 
 import Foundation
 public enum CurveType {
-    case CurveTypeLinear
-    case CurveTypeQuadratic
-    case CurveTypeCubic
-    case CurveTypeQuartic
-    case CurveTypeQuintic
-    case CurveTypeSine
-    case CurveTypeCircular
-    case CurveTypeExpo
-    case CurveTypeElastic
-    case CurveTypeBack
-    case CurveTypeBounce
+    case curveTypeLinear
+    case curveTypeQuadratic
+    case curveTypeCubic
+    case curveTypeQuartic
+    case curveTypeQuintic
+    case curveTypeSine
+    case curveTypeCircular
+    case curveTypeExpo
+    case curveTypeElastic
+    case curveTypeBack
+    case curveTypeBounce
 };
 
 public enum EaseType {
-    case EaseTypeIn
-    case EaseTypeOut
-    case EaseTypeInOut
+    case easeTypeIn
+    case easeTypeOut
+    case easeTypeInOut
 };
