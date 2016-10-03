@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SpriteKitEasingSwift"
-  s.version          = "0.07"
+  s.version          = "0.08"
   s.summary          = "Extends upon the basic easing equations available in the SpriteKit framework by Apple."
 
 # This description is used to generate tags and improve search results.
