@@ -27,11 +27,11 @@ public enum CurveType {
     case curveTypeElastic
     case curveTypeBack
     case curveTypeBounce
-};
+}
 
 ///Ease type
 public enum EaseType {
     case easeTypeIn
     case easeTypeOut
     case easeTypeInOut
-};
+}
