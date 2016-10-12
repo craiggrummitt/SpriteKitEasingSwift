@@ -65,7 +65,9 @@ import SpriteKitEasingSwift
 
 You can use [Carthage](https://github.com/Carthage/Carthage) to install SwiftyJSON by adding it to your Cartfile:
 
+```
 github "craiggrummitt/SpriteKitEasingSwift"
+```
 
 Don't forget to import the Pod where you would like to use it:
 
