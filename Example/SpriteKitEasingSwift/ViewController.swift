@@ -20,38 +20,38 @@ class ViewController: UIViewController {
         if let skview = self.view as? SKView {
             let scene = SKScene(size: CGSize(width: skview.bounds.width, height: skview.bounds.height))
             
-            scene.scaleMode = .AspectFill
+            scene.scaleMode = .aspectFill
             
             skview.presentScene(scene)
             
             
             let circle = SKShapeNode(circleOfRadius: 20)
-            circle.fillColor = UIColor.blueColor()
+            circle.fillColor = UIColor.blue
             circle.lineWidth = 0
             circle.position = CGPoint(x: 0, y: 0)
             scene.addChild(circle)
             animateShape(circle)
 
             let circle2 = SKShapeNode(circleOfRadius: 10)
-            circle2.fillColor = UIColor.yellowColor()
+            circle2.fillColor = UIColor.yellow
             circle2.lineWidth = 0
             circle2.position = CGPoint(x: 0, y: 0)
             scene.addChild(circle2)
             animateShape(circle2)
             
             
-            let rect = SKShapeNode(rectOfSize: CGSize(width: 15, height: 15))
-            rect.fillColor = UIColor.greenColor()
+            let rect = SKShapeNode(rectOf: CGSize(width: 15, height: 15))
+            rect.fillColor = UIColor.green
             rect.lineWidth = 0
             rect.position = CGPoint(x: 0, y: 0)
             scene.addChild(rect)
             animateShape(rect)
         }
     }
-    func animateShape(shape:SKShapeNode) {
+    func animateShape(_ shape:SKShapeNode) {
         if let skview = self.view as? SKView {
             let randomPoint = CGPoint(x:Int(arc4random()%UInt32(skview.bounds.width)),y:Int(arc4random()%UInt32(skview.bounds.height)))
-            shape.runAction(SKEase.moveToWithNode(shape, easeFunction: .CurveTypeElastic, easeType: .EaseTypeOut, time: 1.5, toPoint: randomPoint), completion: { () -> Void in
+            shape.run(SKEase.move(easeFunction: .curveTypeElastic, easeType: EaseType.easeTypeOut, time: 1.5, from: shape.position , to: randomPoint), completion: { () -> Void in
                 self.animateShape(shape)
             })
         }
