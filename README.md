@@ -46,10 +46,24 @@ SpriteKitEasingSwift is available through [CocoaPods](https://cocoapods.org/pods
 it, add the following to your Podfile: (Static Swift frameworks require iOS 8)
 
 ```ruby
-use_frameworks!
 platform :ios, '8.0'
-pod 'SpriteKitEasingSwift'
+use_frameworks!
+
+target "MyApp" do
+	pod 'SpriteKitEasingSwift'
+end
 ```
+
+Don't forget to import the Pod where you would like to use it:
+
+```Swift
+import SpriteKitEasingSwift
+```
+
+**via Carthage**
+You can use [Carthage](https://github.com/Carthage/Carthage) to install SwiftyJSON by adding it to your Cartfile:
+
+github "craiggrummitt/SpriteKitEasingSwift"
 
 Don't forget to import the Pod where you would like to use it:
 
