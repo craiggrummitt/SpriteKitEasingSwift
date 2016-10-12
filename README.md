@@ -42,6 +42,7 @@ API documentation can be found at [cocoadocs](http://cocoadocs.org/docsets/Sprit
 ## Installation
 
 **via CocoaPods**
+
 SpriteKitEasingSwift is available through [CocoaPods](https://cocoapods.org/pods/SpriteKitEasingSwift). To install
 it, add the following to your Podfile: (Static Swift frameworks require iOS 8)
 
@@ -61,6 +62,7 @@ import SpriteKitEasingSwift
 ```
 
 **via Carthage**
+
 You can use [Carthage](https://github.com/Carthage/Carthage) to install SwiftyJSON by adding it to your Cartfile:
 
 github "craiggrummitt/SpriteKitEasingSwift"
@@ -72,6 +74,7 @@ import SpriteKitEasingSwift
 ```
 
 ***via Github:***
+
 Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework either:
 
 1. Drag the Pod/Classes folder into your project.
