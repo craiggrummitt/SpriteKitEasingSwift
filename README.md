@@ -8,17 +8,6 @@ This easing library began life as a port of <a href="https://github.com/buddingm
 This library extends upon the basic easing equations available in the SpriteKit framework by Apple.
 
 Sprite Kit Easing makes available the following standard easing equations as SKActions.
-* Linear
-* Quadratic
-* Cubic
-* Quartic
-* Quintic
-* Sine
-* Circular
-* Expo
-* Elastic
-* Back
-* Bounce
  
 ![easing.gif](easing.gif)
  
@@ -26,13 +15,19 @@ The SKEase functions return an SKAction that performs the ease. You can then run
 
 ```Swift
 //eg an SKLabelNode(which extends SKNode) flies in from the right with an elastic tween:
+//first create an SKNode, let's create a label node
 let titleLabel = SKLabelNode(fontNamed:"Avenir-Light")
 titleLabel.text = "Hello world"
 titleLabel.fontSize = 65
-titleLabel.fontColor = UIColor.blackColor()
-titleLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame))
+titleLabel.fontColor = UIColor.white
+titleLabel.position = CGPoint(x:self.frame.midX, y:self.frame.midY)
 self.addChild(titleLabel)
-titleLabel.runAction(SKEase.moveFrom(withNode:titleLabel, easeFunction: .CurveTypeElastic, easeType: .EaseTypeOut, time: 1.5, fromVector: CGVectorMake(frame.width+titleLabel.frame.width/2, titleLabel.position.y)))
+//perform elastic ease
+titleLabel.run(SKEase.move(easeFunction: .curveTypeElastic,
+   easeType: .easeTypeOut,
+   time: 2,
+   from: CGPoint(x: frame.width+titleLabel.frame.width/2, y: titleLabel.position.y),
+   to:CGPoint(x: -titleLabel.frame.width/2, y: titleLabel.position.y)))
 ```
 
 Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a>.
