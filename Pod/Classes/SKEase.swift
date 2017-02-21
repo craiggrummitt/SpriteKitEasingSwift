@@ -26,7 +26,6 @@ open class SKEase {
         case .curveTypeLinear:
             currentFunction=LinearInterpolation
         case .curveTypeQuadratic:
-            if (easeType == EaseType.easeTypeIn) {print("YES")}
             currentFunction = (easeType == .easeTypeIn) ? QuadraticEaseIn : (easeType == .easeTypeOut) ? QuadraticEaseOut : QuadraticEaseInOut;
         case .curveTypeCubic:
             currentFunction = (easeType == .easeTypeIn) ? CubicEaseIn : (easeType == .easeTypeOut) ? CubicEaseOut : CubicEaseInOut;
