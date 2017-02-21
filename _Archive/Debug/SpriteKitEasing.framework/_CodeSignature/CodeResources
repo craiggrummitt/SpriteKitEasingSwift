@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SpriteKitEasing-Swift.h</key>
 		<data>
-		doE+CL+Rm1ote7bpi8OQdHQtDys=
+		9046MNU13NHpTkAFAgtpq3AnDLo=
 		</data>
 		<key>Headers/SpriteKitEasing.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		GEe7jDkZxUgQ8fiYszyMjShrGas=
+		RhrHpGjwwUkIkYYIsxluES5WMXg=
 		</data>
-		<key>Modules/SpriteKitEasing.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftdoc</key>
 		<data>
-		CimCcgXrXIdY45D8RrQLfFuoXRg=
+		09XPSvZKrfnUPLfOhE2m4HFXX5o=
 		</data>
-		<key>Modules/SpriteKitEasing.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftmodule</key>
 		<data>
-		KHEqundW0AtwpQpnbPiMuS5kw6A=
+		7L9WMqZNGt9nTMFjS4mFQqb3Uao=
 		</data>
-		<key>Modules/SpriteKitEasing.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		fMJhcf+Z1VmDWFeSuOBJIlO8yTk=
+		YELkOhno/VeiF62P3LhuVc7IX10=
 		</data>
-		<key>Modules/SpriteKitEasing.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		Nul5FK1G1v1lClOGSk9atGxK/Rc=
+		WboAZOB7V3J9bIe1LTRZxFefc9Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			doE+CL+Rm1ote7bpi8OQdHQtDys=
+			9046MNU13NHpTkAFAgtpq3AnDLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			reyTSvnSWtVWjC/6PJmiSUtLFoFZCsAwmTmzW0mQBBA=
+			Qilj408Z8sWFEMpFXVTa0mmJzBRqZ5xHLhze50LQesY=
 			</data>
 		</dict>
 		<key>Headers/SpriteKitEasing.h</key>
@@ -61,48 +61,48 @@
 			rZyQCxckUrdNYkwSXd5AmJmsne/U1+D5bpKH/636zwY=
 			</data>
 		</dict>
-		<key>Modules/SpriteKitEasing.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CimCcgXrXIdY45D8RrQLfFuoXRg=
+			09XPSvZKrfnUPLfOhE2m4HFXX5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			8ZGNEyFAJn2/KN/NnHCDxKiN6LboTbN9qJrUlFkrfAg=
+			dGAh01ngDYLRy1D73FsmCxVf8b7YcXv/dCl7UjP7cQY=
 			</data>
 		</dict>
-		<key>Modules/SpriteKitEasing.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KHEqundW0AtwpQpnbPiMuS5kw6A=
+			7L9WMqZNGt9nTMFjS4mFQqb3Uao=
 			</data>
 			<key>hash2</key>
 			<data>
-			MbOkUXA2j14D+1AjFUctJbHoWnWy5gqtfOAr44lChvY=
+			rDCEouIVpVZVjY18ZebU2+fJlUT4TrGy5f5J9KT1IO4=
 			</data>
 		</dict>
-		<key>Modules/SpriteKitEasing.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fMJhcf+Z1VmDWFeSuOBJIlO8yTk=
+			YELkOhno/VeiF62P3LhuVc7IX10=
 			</data>
 			<key>hash2</key>
 			<data>
-			bht18ZdUrMyJeL0Yt+QLkXi6ed7saegtVQ8K8GF2fGE=
+			gtldVkTabg7xci5osR4q5SSZ+66iKr6MyxAas8FpilI=
 			</data>
 		</dict>
-		<key>Modules/SpriteKitEasing.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Nul5FK1G1v1lClOGSk9atGxK/Rc=
+			WboAZOB7V3J9bIe1LTRZxFefc9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			q+Z34zz1OafGBmL74c+Pla4X2OrZ1jqS4UaTIQqIC7Q=
+			hXpVVa18bD1oQEqzCRst/N1jRH0Iua4GoKFvjCqtgqY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -134,6 +134,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -179,6 +184,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>

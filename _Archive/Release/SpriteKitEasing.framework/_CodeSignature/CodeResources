@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/SpriteKitEasing-Swift.h</key>
 		<data>
-		Tln/9IQo2L21GRfLzOFary94c0Q=
+		9046MNU13NHpTkAFAgtpq3AnDLo=
 		</data>
 		<key>Headers/SpriteKitEasing.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Mg4o3lVDxcX7KL3EAictFL0InDA=
+		RhrHpGjwwUkIkYYIsxluES5WMXg=
 		</data>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftdoc</key>
 		<data>
-		j9vdovrqUdHNsJB7tV0hutRFhP4=
+		09XPSvZKrfnUPLfOhE2m4HFXX5o=
 		</data>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftmodule</key>
 		<data>
-		uboFFcBVtsHhGR3CRl+4xK6BYVU=
+		7L9WMqZNGt9nTMFjS4mFQqb3Uao=
 		</data>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		ykhQ36XRAUKaDQptr6oISd5OP+0=
+		YELkOhno/VeiF62P3LhuVc7IX10=
 		</data>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		yIsCiH7bNdzBBWEcoWcN1dYXV1k=
+		WboAZOB7V3J9bIe1LTRZxFefc9Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tln/9IQo2L21GRfLzOFary94c0Q=
+			9046MNU13NHpTkAFAgtpq3AnDLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8OOhtwFWi8LhdPIB+ALONegnrtjqCq1IAObXNtzqth4=
+			Qilj408Z8sWFEMpFXVTa0mmJzBRqZ5xHLhze50LQesY=
 			</data>
 		</dict>
 		<key>Headers/SpriteKitEasing.h</key>
@@ -65,44 +65,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			j9vdovrqUdHNsJB7tV0hutRFhP4=
+			09XPSvZKrfnUPLfOhE2m4HFXX5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			PAL/luqwjjfLKoFXn5QwMtAxdV5lXbgUlpXlr+NlM3s=
+			dGAh01ngDYLRy1D73FsmCxVf8b7YcXv/dCl7UjP7cQY=
 			</data>
 		</dict>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uboFFcBVtsHhGR3CRl+4xK6BYVU=
+			7L9WMqZNGt9nTMFjS4mFQqb3Uao=
 			</data>
 			<key>hash2</key>
 			<data>
-			JXhu1zDC/Of6XbF1CQc/qaxsXs/2C+MusB9FjM8CyeE=
+			rDCEouIVpVZVjY18ZebU2+fJlUT4TrGy5f5J9KT1IO4=
 			</data>
 		</dict>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ykhQ36XRAUKaDQptr6oISd5OP+0=
+			YELkOhno/VeiF62P3LhuVc7IX10=
 			</data>
 			<key>hash2</key>
 			<data>
-			TE/7XB/BHnbJHBNCg8/hDZUUCsIg12J9hAAy944KqTw=
+			gtldVkTabg7xci5osR4q5SSZ+66iKr6MyxAas8FpilI=
 			</data>
 		</dict>
 		<key>Modules/SpriteKitEasing.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yIsCiH7bNdzBBWEcoWcN1dYXV1k=
+			WboAZOB7V3J9bIe1LTRZxFefc9Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			O+KUtR0VA8xdY904OBexTSSLxvmLOet4tYYkPmOXBuw=
+			hXpVVa18bD1oQEqzCRst/N1jRH0Iua4GoKFvjCqtgqY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
