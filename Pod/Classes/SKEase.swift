@@ -133,6 +133,20 @@ open class SKEase {
         }
         return action
     }
+    open class func scaleX(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, from:CGFloat, to:CGFloat)->SKAction {
+        let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
+        let action = self.createFloatTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, scale:CGFloat) -> Void in
+            node.xScale = scale
+        }
+        return action
+    }
+    open class func scaleY(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, from:CGFloat, to:CGFloat)->SKAction {
+        let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
+        let action = self.createFloatTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, scale:CGFloat) -> Void in
+            node.yScale = scale
+        }
+        return action
+    }
     ///legacy
     open class func scaleToWithNode(_ target:SKNode, easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, toValue to:CGFloat)->SKAction {
         let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
