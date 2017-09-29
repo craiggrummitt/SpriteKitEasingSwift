@@ -62,11 +62,7 @@ import SpriteKitEasingSwift
 
 ***via Github:***
 
-Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework drag three files into your project:
-
-* easing.swift
-* SKEase.swift
-* EasingDeclarations.swift
+Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework drag the SpriteKitEasingSwift/Classes folder to your project.
 
 ## Author
 

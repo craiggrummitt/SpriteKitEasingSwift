@@ -48,37 +48,4 @@ class TableOfContentsSpec: QuickSpec {
         }
     }
 }
-/*
- // https://github.com/Quick/Quick
- 
- import Quick
- import Nimble
- import SpriteKitEasingSwift
- import SpriteKit
- 
- class TableOfContentsSpec: QuickSpec {
- let scene = SKScene()
- var easingVar:CGFloat = 0
- override func spec() {
- 
- 
- describe("Check easing scale") {
- it("will eventually pass") {
- 
- let easingFunction = SKEase.getEaseFunction(.curveTypeElastic, easeType: .easeTypeInOut)
- let action = SKEase.createFloatTween(0, end: 100, time: 0.4, easingFunction: easingFunction) { (node:SKNode, variableToEase:CGFloat) -> Void in
- print(variableToEase)
- self.easingVar = variableToEase
- }
- self.scene.run(action)
- waitUntil { done in
- Thread.sleep(forTimeInterval: 0.5)
- expect(self.easingVar) == 100
- done()
- }
- }
- }
- }
- }
- 
- */
+

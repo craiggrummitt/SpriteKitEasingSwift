@@ -18,7 +18,9 @@ s.summary          = 'Extends upon the basic easing equations available in the S
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
 s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Better Easing for SpriteKit in Swift
+    This easing library began life as a port of buddingmonkey's Objective C SpriteKit Easing library to Swift.
+    This library extends upon the basic easing equations available in the SpriteKit framework by Apple.
 DESC
 
 s.homepage         = 'https://github.com/craiggrummitt/SpriteKitEasingSwift'
