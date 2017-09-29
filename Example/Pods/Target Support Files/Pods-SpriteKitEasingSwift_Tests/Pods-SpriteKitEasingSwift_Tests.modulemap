@@ -1,6 +1,0 @@
-framework module Pods_SpriteKitEasingSwift_Tests {
-  umbrella header "Pods-SpriteKitEasingSwift_Tests-umbrella.h"
-
-  export *
-  module * { export * }
-}
