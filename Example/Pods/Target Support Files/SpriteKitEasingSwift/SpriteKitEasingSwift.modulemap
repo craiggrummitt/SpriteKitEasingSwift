@@ -1,6 +1,0 @@
-framework module SpriteKitEasingSwift {
-  umbrella header "SpriteKitEasingSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
