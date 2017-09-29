@@ -62,11 +62,11 @@ import SpriteKitEasingSwift
 
 ***via Github:***
 
-Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework either:
+Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSwift](https://github.com/craiggrummitt/SpriteKitEasingSwift)). You will find an example project there as well. To use the framework drag three files into your project:
 
-1. Drag the Pod/Classes folder into your project.
-2. Import the frameworks in the _Archive folder. Follow the steps under 'Adding Frameworks to an App' [here](https://kodmunki.wordpress.com/2015/09/22/ios-9-universal-cocoa-touch-frameworks/comment-page-1/#comment-201).
-
+* easing.swift
+* SKEase.swift
+* EasingDeclarations.swift
 
 ## Author
 
