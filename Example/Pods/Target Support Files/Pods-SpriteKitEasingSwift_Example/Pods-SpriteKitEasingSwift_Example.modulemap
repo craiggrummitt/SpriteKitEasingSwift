@@ -1,0 +1,6 @@
+framework module Pods_SpriteKitEasingSwift_Example {
+  umbrella header "Pods-SpriteKitEasingSwift_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
