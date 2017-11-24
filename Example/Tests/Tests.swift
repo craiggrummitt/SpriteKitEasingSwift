@@ -3,47 +3,24 @@
 import Quick
 import Nimble
 import SpriteKitEasingSwift
-
+import SpriteKit
+//come back to this, tests not working due to CocoaPods glitch
 class TableOfContentsSpec: QuickSpec {
+  var node = SKNode()
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
-            
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
-                }
+        describe("Test Easing") {
+            it("can ease a float") {
+              var easeMe:CGFloat = 0
+              let easingFunction = SKEase.getEaseFunction(.curveTypeLinear, easeType: .easeTypeIn)
+              let action = SKEase.createFloatTween(0, end: 1, time: 0.3, easingFunction: easingFunction) { (node:SKNode, easeValue:CGFloat) -> Void in
+                easeMe = easeValue
+              }
+              self.node.run(action)
+              waitUntil { done in
+                Thread.sleep(forTimeInterval: 0.5)
+                expect(easeMe) == 1.0
+                done()
+              }
             }
         }
     }

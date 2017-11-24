@@ -5,8 +5,7 @@ target 'SpriteKitEasingSwift_Example' do
 
   target 'SpriteKitEasingSwift_Tests' do
     inherit! :search_paths
-
     pod 'Quick'
-  pod 'Nimble'
+  	pod 'Nimble'
   end
 end
