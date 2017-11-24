@@ -1,6 +1,4 @@
-# SpriteKitEasingSwift
-
-Better Easing for SpriteKit in Swift
+![SpriteKitEasingSwift: Better Easing for SpriteKit in Swift. ](SpriteKitEasingSwift.png)
 
 [![CI Status](http://img.shields.io/travis/iosappdevelopmentwithswift@gmail.com/SpriteKitEasingSwift.svg?style=flat)](https://travis-ci.org/iosappdevelopmentwithswift@gmail.com/SpriteKitEasingSwift)
 [![Version](https://img.shields.io/cocoapods/v/SpriteKitEasingSwift.svg?style=flat)](http://cocoapods.org/pods/SpriteKitEasingSwift)
@@ -14,6 +12,21 @@ This library extends upon the basic easing equations available in the SpriteKit 
 Sprite Kit Easing makes available the following standard easing equations as SKActions.
 
 ![easing.gif](easing.gif)
+
+Use SKEase methods to tween properties of an SKNode, such as:
+* move
+* scale
+* scaleX
+* scaleY
+* rotate
+* fade
+* tweenLabelColor
+* tweenShapeFillColor
+
+If you want to tween a variable, use:
+* createPointTween
+* createFloatTween
+* createColorTween
 
 The SKEase functions return an SKAction that performs the ease. You can then run the SKAction in the same manner you would any other SKAction in SpriteKit.
 
@@ -47,13 +60,6 @@ pod 'SpriteKitEasingSwift'
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-**via Carthage**
-
-You can use [Carthage](https://github.com/Carthage/Carthage) to install SwiftyJSON by adding it to your Cartfile:
-
-```
-github "craiggrummitt/SpriteKitEasingSwift"
-```
 Don't forget to import the Pod where you would like to use it:
 
 ```Swift

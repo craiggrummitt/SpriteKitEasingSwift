@@ -48,6 +48,7 @@ class ViewController: UIViewController {
       label.position = CGPoint(x: skview.bounds.width / 2, y: getYPos(with: CGFloat(i)))
       label.text = String(describing:curveTypes[i])
       scene.addChild(label)
+      animateLabelColor(label, isReturning: true)
       //draw circle
       let circle = getCircle(i)
       circles.append(circle)
@@ -78,7 +79,17 @@ class ViewController: UIViewController {
                 self.animateShape(shape, circleNo: circleNo, isReturning: !isReturning)
     })
   }
-  
+  func animateLabelColor(_ label:SKLabelNode, isReturning:Bool) {
+    let destColor = isReturning ? UIColor.lightGray : UIColor.red
+    label.run(SKEase.tweenLabelColor(easeFunction: .curveTypeLinear,
+                          easeType: EaseType.easeTypeOut,
+                          time: 1.5,
+                          from: label.fontColor!,
+                          to: destColor),
+              completion: { () -> Void in
+                self.animateLabelColor(label, isReturning: !isReturning)
+    })
+  }
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.

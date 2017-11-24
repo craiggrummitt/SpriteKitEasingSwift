@@ -81,7 +81,70 @@ open class SKEase {
         })
         return action
     }
-    
+    /**
+     Create a tween between two colors.
+     - parameter start: Start color
+     - parameter end: End color
+     - parameter time: duration of tween
+     - parameter easingFunction: ease function - create an ease function with the getEaseFunction method.
+     - parameter setterBlock: Any additional properties to tween.
+     */
+    open class func createColorTween(_ start:UIColor, end:UIColor, time:TimeInterval,easingFunction:@escaping AHEasingFunction, setterBlock setter:@escaping ((SKNode,UIColor)->Void))->SKAction {
+      
+      var startRed:CGFloat = 0, startGreen:CGFloat = 0,startBlue:CGFloat = 0,startAlpha:CGFloat = 0
+      start.getRed(&startRed, green: &startGreen, blue: &startBlue, alpha: &startAlpha)
+      var endRed:CGFloat = 0, endGreen:CGFloat = 0,endBlue:CGFloat = 0,endAlpha:CGFloat = 0
+      end.getRed(&endRed, green: &endGreen, blue: &endBlue, alpha: &endAlpha)
+      
+      let action:SKAction = SKAction.customAction(withDuration: time, actionBlock: { (node:SKNode, elapsedTime:CGFloat) -> Void in
+        let timeEq = easingFunction(Float(elapsedTime)/Float(time))
+        
+        let redValue:CGFloat = startRed + CGFloat(timeEq) * (endRed - startRed)
+        let greenValue:CGFloat = startGreen + CGFloat(timeEq) * (endGreen - startGreen)
+        let blueValue:CGFloat = startBlue + CGFloat(timeEq) * (endBlue - startBlue)
+        let alphaValue:CGFloat = startAlpha + CGFloat(timeEq) * (endAlpha - startAlpha)
+        
+        let color = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: alphaValue)
+        setter(node,color)
+      })
+      return action
+    }
+    //MARK: Color
+    /**
+     Animate label color
+     - parameter easeFunction: Curve type
+     - parameter easeType: Ease type
+     - parameter time: duration of tween
+     - parameter from: initial color
+     - parameter to: destination color
+     */
+    open class func tweenLabelColor(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, from:UIColor, to:UIColor)->SKAction {
+      let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
+      let action = self.createColorTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, color:UIColor) -> Void in
+        if let node = node as? SKLabelNode {
+          node.fontColor = color
+        }
+      }
+      return action
+    }
+    //MARK: Color
+    /**
+     Animate shape fill color
+     - parameter easeFunction: Curve type
+     - parameter easeType: Ease type
+     - parameter time: duration of tween
+     - parameter from: initial color
+     - parameter to: destination color
+     */
+    open class func tweenShapeFillColor(easeFunction curve:CurveType, easeType:EaseType, time:TimeInterval, from:UIColor, to:UIColor)->SKAction {
+      let easingFunction = SKEase.getEaseFunction(curve, easeType: easeType)
+      let action = self.createColorTween(from, end: to, time: time, easingFunction: easingFunction) { (node:SKNode, color:UIColor) -> Void in
+        if let node = node as? SKShapeNode {
+          node.fillColor = color
+        }
+      }
+      return action
+    }
     //MARK: Move
     /**
     Animate x/y movement
