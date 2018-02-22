@@ -72,7 +72,7 @@ Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSw
 
 ## Author
 
-<a href="https://github.com/buddingmonkey/SpriteKit-Easing">Craig Grummitt</a>
+<a href="https://github.com/craiggrummitt">Craig Grummitt</a>
 
 Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a>.
 
