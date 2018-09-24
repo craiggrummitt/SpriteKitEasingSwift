@@ -74,7 +74,7 @@ Clone the project at Github ([https://github.com/craiggrummitt/SpriteKitEasingSw
 
 <a href="https://github.com/buddingmonkey/SpriteKit-Easing">Craig Grummitt</a>
 
-Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a>.
+Again, credit and thanks go to <a href="https://github.com/buddingmonkey/SpriteKit-Easing">SpriteKitEasing</a> and <a href="https://github.com/warrenm/AHEasing">AHEasing</a> and the legend of easing, <a href="http://robertpenner.com/easing/">Robert Penner</a>.
 
 
 ## License
