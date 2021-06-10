@@ -1,22 +1,27 @@
 PODS:
-  - Nimble (7.0.2)
-  - Quick (1.2.0)
-  - SpriteKitEasingSwift (0.11)
+  - Nimble (9.2.0)
+  - Quick (4.0.0)
+  - SpriteKitEasingSwift (0.15)
 
 DEPENDENCIES:
   - Nimble
   - Quick
   - SpriteKitEasingSwift (from `../`)
 
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
 EXTERNAL SOURCES:
   SpriteKitEasingSwift:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  SpriteKitEasingSwift: 087faadb520bcf47fb19675fb1649653707a6ffb
+  Nimble: 4f4a345c80b503b3ea13606a4f98405974ee4d0b
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+  SpriteKitEasingSwift: ecdaaef7dad82062725ba1432099991e2e84aa08
 
-PODFILE CHECKSUM: cff8e8d89fe16dcb12f4c7f6402002e97702c983
+PODFILE CHECKSUM: 194a098605de536196b5cb86282eb981dee47c38
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.10.1
