@@ -1,12 +1,10 @@
-import Foundation
+#if canImport(Darwin)
+import class Foundation.NSObject
 
-#if os(macOS) || os(iOS) || os(tvOS) || os(watchOS)
-
-// swiftlint:disable line_length
 public typealias MatcherBlock = (_ actualExpression: Expression<NSObject>, _ failureMessage: FailureMessage) throws -> Bool
 public typealias FullMatcherBlock = (_ actualExpression: Expression<NSObject>, _ failureMessage: FailureMessage, _ shouldNotMatch: Bool) throws -> Bool
-// swiftlint:enable line_length
 
+@available(*, deprecated, message: "Use NMBPredicate instead")
 public class NMBObjCMatcher: NSObject, NMBMatcher {
     let _match: MatcherBlock
     let _doesNotMatch: MatcherBlock

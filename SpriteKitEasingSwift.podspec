@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'SpriteKitEasingSwift'
-s.version          = '0.13'
+s.version          = '0.15.0'
 s.summary          = 'Extends upon the basic easing equations available in the SpriteKit framework by Apple.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ s.author           = { "Craig Grummitt" => "craiggrummitt@gmail.com" }
 s.source           = { :git => 'https://github.com/craiggrummitt/SpriteKitEasingSwift.git', :tag => s.version.to_s }
 s.social_media_url = 'https://twitter.com/craiggrummitt'
 
-s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '9.0'
 
 s.source_files = 'SpriteKitEasingSwift/Classes/**/*'
 
