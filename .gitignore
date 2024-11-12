@@ -26,6 +26,7 @@ xcuserdata
 *.xcuserstate
 *.xcbaseline
 *.xcbkptlist
+*.xcworkspace
 
 ## Obj-C/Swift specific
 *.hmap
@@ -33,3 +34,4 @@ xcuserdata
 
 # Swift Package Manager
 .build/
+.swiftpm/
